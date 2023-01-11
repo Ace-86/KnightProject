@@ -38,7 +38,7 @@
     justify-content: center;
 }
 
-.field:nth-child(-2n+8) {
+.field:nth-child(16n+2), .field:nth-child(16n+4) {
     background-color: rgb(21, 161, 255);
     
 }
