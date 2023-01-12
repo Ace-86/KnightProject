@@ -34,5 +34,14 @@ const newSquareFrom = (xOffset, yOffset) => {
     if (0 <= newX && newX < 8 && 0 <= newY && y < 8) {
     return chessSquare(newX, newY);
     }
-}
+
+//get/set map constructor object name(s)
+if (squareRegistery.has(name())) {
+    return squareRegistry.get(name());
+    } else {
+    const newSquare = { name, getPredeccessor, setPredeccessor, possibleKnightMoves}
+    squareRegistry.set(name(), newSquare);
+    return newSquare;
+    }
+    }
 }
