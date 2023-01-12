@@ -28,4 +28,11 @@ const Knight_Moves = [
     .map((offsset) => newSquareFrom(offset[0], offset[1]))
     }
 
+    //calculate new set of square coords against the offsets
+const newSquareFrom = (xOffset, yOffset) => {
+    const [newX, newY] = [xPosition + xOffset, yPosition + yOffset];
+    if (0 <= newX && newX < 8 && 0 <= newY && y < 8) {
+    return chessSquare(newX, newY);
+    }
+}
 }
