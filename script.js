@@ -44,4 +44,28 @@ if (squareRegistery.has(name())) {
     return newSquare;
     }
 }
+//intake the click coords from user and run the search algo
+const knightsTravails = (start, finish) => {
+    squareRegistry.clear();
+    
+    const origin = chessSquare(...start);
+    const target = chessSquare(...finish);
+    
+    const queue = [origin];
+    while (!queue.includes(target)) {
+    const currentSquare = queue.shift();
+    const enqueueList = currentSquare.possibleKnightMoves();
+    enqueueList.forEach((square) => square.setPredeccessor(currentSquare));
+    queue.push(...enqueueList);
+    }
+    const path = [target]
+    while (!path.includes(origin)) {
+    const prevSquare = path[0].getPredeccessor();
+    path.unshift(prevSquare); 
+    }
+    console.log (`this is the shortest path was ${path.length - 1} moves!`);
+    console.log("the moves were:");
+    path.forEach(square => console.log(square.name()));
+    }
+
 }
