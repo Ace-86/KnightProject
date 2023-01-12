@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: black solid 1px;
 }
 
 .field:nth-child(16n+2), .field:nth-child(16n+4) {
