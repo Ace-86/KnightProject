@@ -69,3 +69,4 @@ const knightsTravails = (start, finish) => {
     }
 
 }
+// export { knightsTravails };
