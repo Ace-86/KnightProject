@@ -43,5 +43,5 @@ if (squareRegistery.has(name())) {
     squareRegistry.set(name(), newSquare);
     return newSquare;
     }
-    }
+}
 }
