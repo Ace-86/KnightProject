@@ -15,6 +15,17 @@ const Knight_Moves = [
         [2, -1], [-1, 2], [-1 , -2],
         [-2, 1], [-2, -1]
     ]
-
+    const getPredeccessor = () => predeccessor;
+    const setPredeccessor = (newPredeccessor) => {
+    predeccessor = predeccessor || newPredeccessor;
+    }
+    
+    const name = () => `${x}, ${y}`;
+    
+    //evalvaluate current possible knight moves against offsets
+    const possibleKnightMoves = () => {
+    return Knight_Moves
+    .map((offsset) => newSquareFrom(offset[0], offset[1]))
+    }
 
 }
