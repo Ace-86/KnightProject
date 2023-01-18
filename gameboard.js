@@ -48,4 +48,4 @@ cellNodes.forEach((cellNode) => {
 document.body.appendChild(chessTable);
 };
 
-// export { gameBoard};
+export { gameBoard};
