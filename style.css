@@ -1,10 +1,20 @@
-.chess-board {
-    margin: auto;
-    width: 630px;
-    height: 720px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr 40px;
-    grid-gap: 0;
+body {
+    text-align: center;
+    background-color: brown;
 }
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 1.5px solid grey;
+    border-style: inset;
+}
+
+.blackcell {
+    background-color: black;
+}
+
+.whitecell {
+    background-color: white;
+}
+
